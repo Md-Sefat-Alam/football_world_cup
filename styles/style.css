@@ -1,0 +1,114 @@
+/* recet conde for all browser default margin padding 0 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* anchor tag modify that */
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+#banner{
+    
+}
+
+#banner .fullwrap{
+    background: #2D25A0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 1440px;
+    /* background-color: #E02C6D; */
+}
+
+#banner .banner_wrap{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+#banner .banner_wrap .left_text{
+    position: relative;
+
+}
+#banner .banner_wrap .left_text h1{
+    font-weight: bold;
+    font-size: 64px;
+    width: 485px;
+    margin-bottom: 27px;
+    color:#FFFFFF;
+}
+#banner .banner_wrap .left_text a{
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 24px;   
+    background: #E02C6D;
+    padding: 10px 25px;
+
+}
+
+
+#banner .banner_wrap .left_text a:hover i{
+    animation: buttonanimate 0.2s ease-in-out 0.2s infinite alternate;
+    
+}
+
+@keyframes buttonanimate {
+    from{
+        position: relative;
+        left: 0px;
+    }
+    to{
+        position: relative;
+        left: 10px;      
+    }
+}
+
+#banner .banner_wrap .inage_box{ 
+    width: 300px;
+    height: 428px;
+    margin-top: 50px;
+    margin-bottom: 85px;
+    background-color: #3DBAFD;
+    position: relative;
+    margin-left: 50px;
+    border-top-right-radius: 30%;
+
+
+    
+
+}
+/* football animation */
+
+
+#man_footboller{ 
+    width: 556px;
+    height: 438px;
+    position: absolute;
+    margin-left: -150px;
+
+    transform: rotate(-15deg);
+}
+
+
+#football_img{
+    position: absolute;
+    z-index: 999;
+    top: 110px;
+    left: 800px;
+
+}
+
