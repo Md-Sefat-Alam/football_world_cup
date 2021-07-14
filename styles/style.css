@@ -29,6 +29,12 @@ body{
 
 
 
+/* start banner section css */
+main{
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 50px;
+}
+
 #banner{
     
 }
@@ -90,19 +96,30 @@ body{
 #man_footboller{ 
     width: 556px;
     height: 438px;
-    position: absolute;
+    position: relative;
     margin-left: -150px;
 
     transform: rotate(-15deg);
+    
+
 }
 
 
 #football_img{
-    position: absolute;
+    position: relative;
     z-index: 999;
-    top: 110px;
-    left: 800px;
+    
+    top: 210px;
+    left: -150px;
 }
+
+#banner:hover #man_footboller{
+    animation: animate_football_kikk 1s cubic-bezier(0.91, 0.16, 0.26, 1.2) 0.2s;
+}
+#banner:hover #football_img{    
+    animation: animate_football_go 4s cubic-bezier(0, 0.78, 0.81, 0.91) 0.3s alternate;
+}
+
 
 /* --------------------
     end banner part
@@ -138,7 +155,7 @@ body{
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     padding: 15px;
-    transition: transform 0.5s;
+    transition: transform 0.2s;
 }
 .players .player:hover{
     transform: scale(1.1);
@@ -237,9 +254,16 @@ body{
 }
 .news_wrap .news_post{
     width: 300px;
-    background-color: rgb(247, 241, 241);
+    /* background-color: rgb(247, 241, 241); */
     overflow: hidden;
     padding: 10px;
+    border: 1px solid lightgray;
+    transition: all 0.2s;
+
+}
+.news_wrap a:hover .news_post{
+    transform: scale(1.1);
+    background-color: lightgray;
 
 }
 .news_wrap .news_post .news_img img{
@@ -277,12 +301,15 @@ body{
 .more_news .more_post{
     width: 400px;
     height: 100px;
-    background-color: rgb(245, 239, 239);
     display: flex;
     align-items: center;
     overflow: hidden;
     flex-direction: row;
-    
+    transition: all 0.2s;
+}
+.more_news a:hover .more_post{
+    transform: scale(1.1);    
+    background-color: rgb(245, 239, 239);
 }
 
 .more_news .more_txt{
@@ -308,6 +335,61 @@ body{
 
 /* --------------------
     end news part section part
+------------------ */
+
+#partner_section{
+    display: flex;
+    justify-content: center;
+    margin: 90px 0px;
+}
+
+
+.partner_wrap h1{
+    font-size: 30px;
+    margin: 50px 0px;
+    text-align: left;
+}
+.partner_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    
+}
+
+/* --------------------
+    end Football_world_cup PARTNERS part section part
+------------------ */
+#sponsors_section{
+    display: flex;
+    justify-content: center;
+}
+.sponsors_wrap h1{
+    font-size: 25px;
+    text-align: center;    
+    margin:20px;
+    margin-top: 0px;
+
+}
+.sponsor_margin{
+    margin: 50px 0px;
+}
+.sponsors_wrap .sponsor_list{
+    display: flex;
+    justify-content: center;
+
+}
+.sponsors_wrap .sponsor_list img{
+    margin:20px;
+
+}
+
+
+
+
+
+/* --------------------
+    end sponsors section part
 ------------------ */
 
 
@@ -365,9 +447,180 @@ body{
     end footer part
 ------------------ */
 
+/* start media queries */
+/* for mobile device */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+  
+    #banner .banner_wrap .left_text h1{
+        font-size: 36px;
+        line-height:50px;
+        width: 278px;
+        margin-top: 80px;
+        color: orange;
+    }
 
 
+    #banner .banner_wrap {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    #man_footboller {
+        width: 280px;
+        height: 310px;
+        position: relative;
+        margin-left: -50px;
+        transform: rotate(-15deg);
+        
+    }#football_img {
+        position: relative;
+        z-index: 999;
+        top: 145px;
+        left: -50px;
+    }
+    #banner .banner_wrap .image_box{
+        width: 230px;
+        height: 260px;
+    }
+    #banner:hover #man_footboller{
+        animation: none;
 
+    }
+    #banner:hover #football_img{    
+        animation: none;
+    }
+    #banner .banner_wrap .image_box{
+        margin-top: 0px;
+
+    }
+/* end banner seciton */
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        row-gap: 27px;
+    }
+    .players .player:hover{
+        transform: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        z-index: 99;
+    }
+/* end players section  */
+    #copa_america {
+        display: block;
+    }
+    .copa_america_wrap .left_side_texts h1 {
+        font-weight: bold;
+        width: 292px;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 8px;
+        color: orange;
+    }
+    .copa_america_wrap .left_side_texts p {
+        font-size: 16px;
+        line-height: 28px;
+        width: 329px;
+    }
+    .copa_america_wrap {
+        margin: 95px 0px 30px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .copa_america_wrap .right_side_image img {
+        width: 328px;
+        height: 248px;
+        margin-top: 35px;
+    }
+/* end copa america section */
+
+    .news_margin > h1 {
+        font-size: 30px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        color: orange;
+    }
+    .news_wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        row-gap: 25px;
+    }
+    .news_wrap a:hover .news_post{
+        transform: none;
+        background-color: rgb(240, 228, 228);
+    
+    }
+    .more_news {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+    }
+    .more_news .more_txt h3 {
+        font-size: 15px;
+    }
+    .more_news .more_post {
+        width: 300px;
+        transition: none;
+    }
+    .more_news a:hover .more_post{
+        transform: none);    
+        background-color: rgb(245, 239, 239);
+    }
+    .more_news .more_txt span {
+        font-size: 10px;
+    }
+
+    /* end news seciton */
+
+    .partner_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+    .partner_wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partner_wrap h1 {
+        text-align: center;
+        color: orange;
+    }
+    /* end partner section */
+    .sponsors_wrap h1 {
+        font-size: 30px;
+        text-align: center;
+        margin: 20px;
+        margin-top: 0px;
+        color: orange;
+    }
+    .sponsors_wrap .sponsor_list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+/* end sponsors section */
+
+    .footerlogo img {
+        width: 271px;
+        height: 60px;
+    }
+    .contentwrap .footer_links span {
+        width: 30px;
+        height: 30px;
+    }
+    .contentwrap .footer_links span i {
+        font-size: 16px;
+    }
+    /* end footer part */
+}
 
 
 /* --------------------
@@ -392,3 +645,59 @@ body{
         left: 10px;      
     }
 }
+/* animation for football go */
+@keyframes animate_football_go {
+    20%{
+        top: 210px;
+        left: -150px;
+    }
+    38%{
+        top: -500px;
+        left: -350px;
+    }
+    54%{
+        top: 570px;
+        left: -500px;
+    }
+    64%{
+        top: 270px;
+        left: -550px;
+    }
+    75%{
+        top: 570px;
+        left: -600px;
+    }
+    84%{
+        top: 370px;
+        left: -625px;
+    }
+    88%{
+        top: 570px;
+        left: -685px;
+    }
+    93%{
+        top: 500px;
+        left: -700px;
+    }
+    /* 97%{
+        top: 570px;
+        left: -725px;
+    } */
+    100%{
+        top: 210px;
+        left: -150px;
+    }
+}
+/* animation for footboller kikk */
+@keyframes animate_football_kikk {
+    form{
+        margin-left: -150px;
+    }
+    to{
+        margin-top: -20px;
+        margin-left: -230px;
+        transform: rotate(2deg);
+    }
+    
+}
+/* end animation part */
