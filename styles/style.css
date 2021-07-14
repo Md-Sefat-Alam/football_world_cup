@@ -470,7 +470,7 @@ main{
         font-size: 36px;
         line-height:50px;
         width: 278px;
-        margin-top: 80px;
+        margin-top: 30px;
         color: white;
     }
 
@@ -491,7 +491,9 @@ main{
         position: relative;
         z-index: 999;
         top: 145px;
-        left: -50px;
+        left: -20px;
+        width: 85px !important;
+        height: 85px !important;
     }
     #banner .banner_wrap .image_box{
         width: 230px;
@@ -503,6 +505,9 @@ main{
     }
     #banner:hover #football_img{    
         animation: none;
+    }
+    #banner .banner_wrap .image_box {
+        margin-top: 0px;
     }
     #banner .banner_wrap .image_box{
         margin-top: 0px;
@@ -530,7 +535,7 @@ main{
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 8px;
-        color: orange;
+        color: black;
     }
     .copa_america_wrap .left_side_texts p {
         font-size: 16px;
@@ -538,7 +543,7 @@ main{
         width: 329px;
     }
     .copa_america_wrap {
-        margin: 95px 0px 30px 0px;
+        margin: 95px 20px 30px 20px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -550,13 +555,21 @@ main{
         margin-top: 35px;
     }
 /* end copa america section */
-
+    .news_wrap .news_post {
+        width: 300px;
+        background-color: rgba(243, 236, 236, 0.781);
+        overflow: hidden;
+        padding: 10px;
+        border: 1px solid rgba(236, 230, 230, 0.699);
+        transition: all 0.2s;
+    }
     .news_margin > h1 {
         font-size: 30px;
         margin-bottom: 50px;
         margin-top: 50px;
-        color: orange;
+        color: black;
     }
+
     .news_wrap {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -602,7 +615,7 @@ main{
     }
     .partner_wrap h1 {
         text-align: center;
-        color: orange;
+        color: black;
     }
     /* end partner section */
     .sponsors_wrap h1 {
@@ -610,7 +623,7 @@ main{
         text-align: center;
         margin: 20px;
         margin-top: 0px;
-        color: orange;
+        color: black;
     }
     .sponsors_wrap .sponsor_list {
         display: flex;
@@ -623,6 +636,7 @@ main{
     .footerlogo img {
         width: 271px;
         height: 60px;
+        margin-bottom: 30px;
     }
     .contentwrap .footer_links span {
         width: 30px;
@@ -652,7 +666,7 @@ main{
         flex-direction: column;
     }
     #banner .banner_wrap .left_text h1{
-        margin-top: 80px;
+        margin-top: 30px;
     }
     /* end banner part */
 
@@ -742,7 +756,7 @@ main{
         width: 100%;
     }
     #banner .banner_wrap .left_text h1{
-        margin-top: 80px;
+        margin-top: 30px;
     }
     #banner .banner_wrap {
         justify-content: flex-start;
