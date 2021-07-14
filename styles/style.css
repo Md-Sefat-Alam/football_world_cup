@@ -215,7 +215,7 @@ main{
     font-weight: bold;
     font-size: 48px;
     line-height: 60px;
-    color: #0A0826;
+    color: orange;
     margin-bottom: 8px;
 }
 .copa_america_wrap .left_side_texts p{
@@ -247,6 +247,7 @@ main{
     font-size: 48px;
     margin-bottom: 50px;
     margin-top: 50px;
+    color: orange;
 }
 .news_wrap{
     display: grid;
@@ -357,6 +358,7 @@ main{
     font-size: 30px;
     margin: 50px 0px;
     text-align: left;
+    color: orange;
 }
 .partner_list{
     display: grid;
@@ -378,6 +380,7 @@ main{
     text-align: center;    
     margin:20px;
     margin-top: 0px;
+    color: orange;
 
 }
 .sponsor_margin{
