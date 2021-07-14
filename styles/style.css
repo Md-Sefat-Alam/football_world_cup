@@ -15,7 +15,6 @@ a{
 
 body{
     font-family: 'Poppins', sans-serif;
-    
 }
 
 /* common code */
@@ -90,7 +89,6 @@ main{
     border-top-right-radius: 30%;
 
 }
-/* football animation */
 
 
 #man_footboller{ 
@@ -100,7 +98,6 @@ main{
     margin-left: -150px;
 
     transform: rotate(-15deg);
-    
 
 }
 
@@ -114,7 +111,7 @@ main{
 }
 
 #banner:hover #man_footboller{
-    animation: animate_football_kikk 1s cubic-bezier(0.91, 0.16, 0.26, 1.2) 0.2s;
+    animation: animate_football_kikk 1s cubic-bezier(0.91, 0.16, 0.26, 1.2) 0.2s alternate;
 }
 #banner:hover #football_img{    
     animation: animate_football_go 4s cubic-bezier(0, 0.78, 0.81, 0.91) 0.3s alternate;
@@ -175,7 +172,7 @@ main{
     font-weight: bold;
     font-size: 28px;
     line-height: 40px;
-    margin: 16px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
 .players .player .player_detail p{
     font-size: 16px;
@@ -183,6 +180,11 @@ main{
     margin-bottom: 18px;
     color: #6C6C6C;
 }
+.player_detail p a{
+    text-decoration: none;
+    color: blue;
+}
+
 
 
 
@@ -257,14 +259,14 @@ main{
     /* background-color: rgb(247, 241, 241); */
     overflow: hidden;
     padding: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid white;
     transition: all 0.2s;
 
 }
 .news_wrap a:hover .news_post{
-    transform: scale(1.1);
-    background-color: lightgray;
-
+    transform: scale(1.1);    
+    background-color: rgb(245, 239, 239);
+  
 }
 .news_wrap .news_post .news_img img{
     width: 300px;
@@ -343,6 +345,13 @@ main{
     margin: 90px 0px;
 }
 
+.partner_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .partner_wrap h1{
     font-size: 30px;
@@ -352,7 +361,7 @@ main{
 .partner_list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
+    column-gap: 80px;
     row-gap: 50px;
     
 }
@@ -459,7 +468,7 @@ main{
         line-height:50px;
         width: 278px;
         margin-top: 80px;
-        color: orange;
+        color: white;
     }
 
 
@@ -624,14 +633,160 @@ main{
 
 
 /* --------------------
-    end banner part
------------------- */
+    end mobile device media query
+------------------------*/
+
+/* start tablet mobile device media query */
+
+@media only screen and (min-width:689px) and (max-width:991px){
+
+    .container{
+        width: 100%;
+    } 
+    #banner .banner_wrap {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    #banner .banner_wrap .left_text h1{
+        margin-top: 80px;
+    }
+    /* end banner part */
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* end players part */
+
+    .copa_america_wrap {
+        margin: 50px 0px 30px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .copa_america_wrap .left_side_texts h1 {
+        text-align: center;
+        width: 688px;
+    }
+    .copa_america_wrap .left_side_texts p {
+        width: 688px;
+    }
+    .copa_america_wrap .right_side_image img {
+        margin-top: 50px;
+        width: 680px;
+    }
+/* end copa america  */
+
+    .news_wrap {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+    .more_news {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+    }
+    .news_margin > h1 {
+        margin-top: 100px;
+    }
+/* end news part */
+    .partner_wrap h1 {
+        font-size: 35px;
+    }
+    .partner_wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partner_list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+    /* end partner part */
+    .sponsors_wrap h1 {
+        font-size: 35px;
+    }
+    .sponsors_wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsors_wrap .sponsor_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 60px;
+        column-gap: 60px;
+    }
+    /* end sponsor part */
+}
+
+
+/* #footer_section, #sponsors_section, #partner_section, #news_section, #copa_america, #plaers_section, #banner{
+    display: none;
+} */
+
 /* --------------------
-    end banner part
+    end tablet mobile device media query
 ------------------ */
+
+
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+    .container {
+        width: 100%;
+    }
+    #banner .banner_wrap .left_text h1{
+        margin-top: 80px;
+    }
+    #banner .banner_wrap {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* end banner part */
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* end players */
+
+    .copa_america_wrap .right_side_image img {
+        width:500px;
+        height: 400px;
+    }
+    .copa_america_wrap {
+        margin: 95px 20px 95px 20px;
+    }
+    /* end copa america */
+
+    
+    .news_wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 25px;
+    }
+
+
+    .partner_wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
 /* --------------------
-    end banner part
+    end mini Desktop media query
 ------------------ */
+
+
+
 
 
 /* animation for button */
