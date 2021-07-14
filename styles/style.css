@@ -215,7 +215,7 @@ main{
     font-weight: bold;
     font-size: 48px;
     line-height: 60px;
-    color: orange;
+    color: black;
     margin-bottom: 8px;
 }
 .copa_america_wrap .left_side_texts p{
@@ -247,7 +247,7 @@ main{
     font-size: 48px;
     margin-bottom: 50px;
     margin-top: 50px;
-    color: orange;
+    color: black;
 }
 .news_wrap{
     display: grid;
@@ -358,7 +358,7 @@ main{
     font-size: 30px;
     margin: 50px 0px;
     text-align: left;
-    color: orange;
+    color: black;
 }
 .partner_list{
     display: grid;
@@ -380,7 +380,7 @@ main{
     text-align: center;    
     margin:20px;
     margin-top: 0px;
-    color: orange;
+    color: black;
 
 }
 .sponsor_margin{
@@ -535,7 +535,7 @@ main{
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 8px;
-        color: black;
+        color: orange;
     }
     .copa_america_wrap .left_side_texts p {
         font-size: 16px;
@@ -567,7 +567,7 @@ main{
         font-size: 30px;
         margin-bottom: 50px;
         margin-top: 50px;
-        color: black;
+        color: orange;
     }
 
     .news_wrap {
@@ -615,7 +615,7 @@ main{
     }
     .partner_wrap h1 {
         text-align: center;
-        color: black;
+        color: orange;
     }
     /* end partner section */
     .sponsors_wrap h1 {
@@ -623,7 +623,7 @@ main{
         text-align: center;
         margin: 20px;
         margin-top: 0px;
-        color: black;
+        color: orange;
     }
     .sponsors_wrap .sponsor_list {
         display: flex;
