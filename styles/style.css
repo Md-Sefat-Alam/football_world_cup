@@ -12,6 +12,9 @@
 a{
     text-decoration: none;
 }
+sup{
+    font-size: 12px;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -203,12 +206,13 @@ main{
 }
 
 .copa_america_wrap{
-    margin: 95px 0px 95px 0px;
+    margin: 95px 20px 95px 20px;
     display: flex;
     align-items: center;
 }
 
 .copa_america_wrap .left_side_texts{
+    margin-right: 15px;
 }
 
 .copa_america_wrap .left_side_texts h1{
